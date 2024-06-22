@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*element selector*/
+        div {
+            width: 200px;
+            height: 200px;
+           background-color: lightcoral;
+            font-size: 30px;
+            font-style : initial;
+            border: double;
+            border-color: black;
+            color: darkslategrey;
+        }
+        h1{
+           background-color: lightcoral;
+            font-size: 30px;
+            font-style : initial;
+            border: double;
+            border-color: black;
+            color: darkslategrey;
+        }
+
+        /*ID selector*/
+        #Myheading {
+            font: black;
+            background-color: lightslategrey;
+            font-style: oblique;
+        }
+
+        /*class selector*/
+        .Myparagraph {
+            background-color: lightslategrey;
+            font-size: 20px;
+            font-style: unset;
+        }
+
+        /*attribute selector*/
+        a[href="https://www.amazon.in/"] {
+            color: aquamarine;
+            background-color: cadetblue;
+        }
+
+        /*universal selector*/
+        * {
+            font-size: 20px;
+        }
+
+        /*group selector*/
+        div,
+        .Myparagraph,
+        .Myheading {
+            font-style: oblique;
+            color: white;
+        }
+
+        /*pesudo selector*/
+        p::before {
+            content: url("https://visme.co/blog/wp-content/uploads/2020/02/header-1200.gif");
+        }
+
+        /*pesudo class selector*/
+        #hoverld:hover {
+            background-color: black;
+            color: lightpink;
+            border: 5px lightpink double;
+            font-style: italic;
+        }
+
+        /*Desended selector*/
+        .almari a:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .almari :hover {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>css element selector</div>
+    <h1 id="Myheading">My ID selector</h1>
+    <h1 id="Myheading">My ID selector</h1>
+    <p class="Myparagraph">My class selector</p>
+    <p class="Myparagraph">My class selector</p>
+    <p class="Myparagraph">My class selector</p>
+    <p class="Myparagraph">My class selector</p>
+    <a href="https://www.amazon.in/">click here</a>
+    <h1>css pesudo class selector</h1>
+    <div id="hoverld">css pesudo class selector</div>
+    <div class="almari">
+        <p>kapde</p>
+        <p>kitab</p>
+        <p>khilone</p>
+        <a href="#">click here</a>
+    </div>
+</body>
+
+</html>
